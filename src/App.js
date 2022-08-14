@@ -21,8 +21,10 @@ function App() {
   }
 
   const getData = async () => {
-    const { data } = await axios.get(`http://localhost:3004/tasks?_sort=id&_order=desc`);
-    setData(data);
+    // const { data } = await axios.get(`http://localhost:3004/tasks?_sort=id&_order=desc`);
+    const { data } = await axios.get(`${process.env.REACT_APP_SERVER_URL}/tasks`);
+    
+    setData(data.data);
   };
 
   const delTask = async (taskId) => {
