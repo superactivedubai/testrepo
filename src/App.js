@@ -35,7 +35,7 @@ function App() {
    },[]);
    
 
-  // fetching data from backend server
+  // fetching data from backend server. 
 
   // sample fixed task data, to be changed to DB. 
   // const taskInfo = {
