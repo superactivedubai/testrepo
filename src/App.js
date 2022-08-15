@@ -75,7 +75,7 @@ function App() {
    
     <div className="containerOne">
       <div className="containerHeader">
-        <div>Task Meter 25/50</div>
+        <div>Task meter 25/50</div>
         {showForm?<AddTaskForm toggle={toggleForm}/>:<></>}
         <div className="add_task_button" onClick={toggleForm}>Add Task</div>
       </div>
