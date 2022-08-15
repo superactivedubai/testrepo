@@ -72,6 +72,7 @@ function App() {
    
     <div className="App" >
       {slidePage? <SlidePage toggle={toggleSlidePage} requiredComponent="Filter"/> : <></>}
+      <div className="example"></div>
    
     <div className="containerOne">
       <div className="containerHeader">

@@ -25,6 +25,7 @@ body {
 
 .containerHeader {
   display: flex;
+  flex: 1;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -32,6 +33,7 @@ body {
 
 .column_group {
   display: flex;
+  flex: 1;
   flex-direction: row;
 }
 .column_1 {
@@ -426,4 +428,57 @@ textarea {
   text-align: center;
   border-radius: 15px;
   width: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {
+    background: red;
+  }
+
+  .column_group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column_1 {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 80%;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .add_task_button {
+    background-color: #098605;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+  .example {
+    background: green;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  .example {
+    background: blue;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
 }
